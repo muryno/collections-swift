@@ -21,20 +21,47 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="q66-Fc-cTH">
                                 <rect key="frame" x="0.0" y="156" width="414" height="412"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dXq-ti-pTi">
-                                    <size key="itemSize" width="50" height="50"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dXq-ti-pTi">
+                                    <size key="itemSize" width="373" height="253"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="87j-aw-mfL">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="87j-aw-mfL" customClass="FeaturedGiftCardCell" customModule="WiredBrainCoffee" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="79.666666666666671" width="373" height="253"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="373" height="253"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lmK-RS-Fyt">
+                                                    <rect key="frame" x="0.0" y="0.0" width="363" height="243"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AE7-F0-euU">
+                                                            <rect key="frame" x="0.0" y="0.0" width="363" height="243"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="AE7-F0-euU" firstAttribute="leading" secondItem="lmK-RS-Fyt" secondAttribute="leading" id="4sV-2Z-lU3"/>
+                                                        <constraint firstAttribute="trailing" secondItem="AE7-F0-euU" secondAttribute="trailing" id="U3U-hH-Yos"/>
+                                                        <constraint firstItem="AE7-F0-euU" firstAttribute="top" secondItem="lmK-RS-Fyt" secondAttribute="top" id="h3p-QS-Lpe"/>
+                                                        <constraint firstAttribute="bottom" secondItem="AE7-F0-euU" secondAttribute="bottom" id="vIo-xr-BO0"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="lmK-RS-Fyt" firstAttribute="top" secondItem="87j-aw-mfL" secondAttribute="top" id="DRk-pu-muD"/>
+                                            <constraint firstAttribute="trailing" secondItem="lmK-RS-Fyt" secondAttribute="trailing" constant="10" id="E48-SM-otV"/>
+                                            <constraint firstAttribute="bottom" secondItem="lmK-RS-Fyt" secondAttribute="bottom" constant="10" id="SPD-j4-PcW"/>
+                                            <constraint firstItem="lmK-RS-Fyt" firstAttribute="leading" secondItem="87j-aw-mfL" secondAttribute="leading" id="vcc-D5-pcg"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="cardImageView" destination="AE7-F0-euU" id="HlC-Tb-FgT"/>
+                                            <outlet property="cardView" destination="lmK-RS-Fyt" id="PMh-dF-JFa"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -55,7 +82,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ntG-uA-tFR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1512.8" y="750.67466266866575"/>
+            <point key="canvasLocation" x="1511.5942028985507" y="750.66964285714278"/>
         </scene>
         <!--Gift-->
         <scene sceneID="dYa-xe-YrL">

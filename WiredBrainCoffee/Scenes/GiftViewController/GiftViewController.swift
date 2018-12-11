@@ -17,7 +17,14 @@ class GiftViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        featuredCollectionView.dataSource = self
         
+        GiftCardFunctions.getFeaturedGiftCards { [weak self] (featuredGiftCards) in
+            guard let self = self else { return }
+            
+            self.featuredGiftCards = featuredGiftCards
+            self.featuredCollectionView.reloadData()
+        }
     }
 }
 
@@ -27,10 +34,8 @@ extension GiftViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! FeaturedGiftCardCell
+        cell.setup(model: featuredGiftCards[indexPath.item])
         return cell
     }
-    
-    
 }
