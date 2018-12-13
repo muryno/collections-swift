@@ -9,7 +9,7 @@
 import Foundation
 
 class GiftCardFunctions {
-    static func getFeaturedGiftCards(completion: @escaping ([GiftCardModel]) -> ()) {
+    static func getSeasonalGiftCards(completion: @escaping ([GiftCardModel]) -> ()) {
         // Replace with real data store code
         
         DispatchQueue.global(qos: .userInitiated).async {
@@ -21,6 +21,38 @@ class GiftCardFunctions {
             giftCardModels.append(GiftCardModel(id: UUID(), description: "Seasonal Gift Card 5", image: #imageLiteral(resourceName: "SeasonalGiftCard5")))
             giftCardModels.append(GiftCardModel(id: UUID(), description: "Seasonal Gift Card 6", image: #imageLiteral(resourceName: "SeasonalGiftCard6")))
 
+            DispatchQueue.main.async {
+                completion(giftCardModels)
+            }
+        }
+    }
+    
+    static func getBirthdayGiftCards(completion: @escaping ([GiftCardModel]) -> ()) {
+        // Replace with real data store code
+        
+        DispatchQueue.global(qos: .userInitiated).async {
+            var giftCardModels = [GiftCardModel]()
+            giftCardModels.append(GiftCardModel(id: UUID(), description: "Birthday Gift Card 1", image: #imageLiteral(resourceName: "BirthdayGiftCard1")))
+            giftCardModels.append(GiftCardModel(id: UUID(), description: "Birthday Gift Card 2", image: #imageLiteral(resourceName: "BirthdayGiftCard2")))
+            giftCardModels.append(GiftCardModel(id: UUID(), description: "Birthday Gift Card 3", image: #imageLiteral(resourceName: "BirthdayGiftCard3")))
+            giftCardModels.append(GiftCardModel(id: UUID(), description: "Birthday Gift Card 4", image: #imageLiteral(resourceName: "BirthdayGiftCard4")))
+            
+            DispatchQueue.main.async {
+                completion(giftCardModels)
+            }
+        }
+    }
+    
+    static func getThankYouGiftCards(completion: @escaping ([GiftCardModel]) -> ()) {
+        // Replace with real data store code
+        
+        DispatchQueue.global(qos: .userInitiated).async {
+            var giftCardModels = [GiftCardModel]()
+            giftCardModels.append(GiftCardModel(id: UUID(), description: "Thank You Gift Card 1", image: #imageLiteral(resourceName: "ThankYouGiftCard1")))
+            giftCardModels.append(GiftCardModel(id: UUID(), description: "Thank You Gift Card 2", image: #imageLiteral(resourceName: "ThankYouGiftCard2")))
+            giftCardModels.append(GiftCardModel(id: UUID(), description: "Thank You Gift Card 3", image: #imageLiteral(resourceName: "ThankYouGiftCard3")))
+            giftCardModels.append(GiftCardModel(id: UUID(), description: "Thank You Gift Card 4", image: #imageLiteral(resourceName: "ThankYouGiftCard4")))
+            
             DispatchQueue.main.async {
                 completion(giftCardModels)
             }
