@@ -10,6 +10,7 @@
 		E751E92F21BCD6E800248B9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E751E92E21BCD6E800248B9E /* AppDelegate.swift */; };
 		E751E93621BCD6E800248B9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E751E93521BCD6E800248B9E /* Assets.xcassets */; };
 		E751E93921BCD6E800248B9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E751E93721BCD6E800248B9E /* LaunchScreen.storyboard */; };
+		E75BE2A821C0DC8600CAEB02 /* SmallGiftCardCollectionViewSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75BE2A721C0DC8600CAEB02 /* SmallGiftCardCollectionViewSource.swift */; };
 		E78E378521BE36EF00DF4E57 /* MainTabViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E78E378421BE36EF00DF4E57 /* MainTabViewController.storyboard */; };
 		E78E378721BE375E00DF4E57 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E78E378621BE375E00DF4E57 /* HomeViewController.storyboard */; };
 		E78E378921BE378200DF4E57 /* CardsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E78E378821BE378200DF4E57 /* CardsViewController.storyboard */; };
@@ -29,6 +30,7 @@
 		E751E93521BCD6E800248B9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E751E93821BCD6E800248B9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E751E93A21BCD6E800248B9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E75BE2A721C0DC8600CAEB02 /* SmallGiftCardCollectionViewSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallGiftCardCollectionViewSource.swift; sourceTree = "<group>"; };
 		E78E378421BE36EF00DF4E57 /* MainTabViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainTabViewController.storyboard; sourceTree = "<group>"; };
 		E78E378621BE375E00DF4E57 /* HomeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = HomeViewController.storyboard; path = WiredBrainCoffee/Scenes/HomeViewController/HomeViewController.storyboard; sourceTree = SOURCE_ROOT; };
 		E78E378821BE378200DF4E57 /* CardsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CardsViewController.storyboard; path = WiredBrainCoffee/Scenes/CardsViewController/CardsViewController.storyboard; sourceTree = SOURCE_ROOT; };
@@ -149,6 +151,7 @@
 				E78E378E21BE37E800DF4E57 /* GiftViewController.storyboard */,
 				E7B5046521BF7EC400076561 /* GiftViewController.swift */,
 				E7B5046E21BF95D200076561 /* FeaturedGiftCardCell.swift */,
+				E75BE2A721C0DC8600CAEB02 /* SmallGiftCardCollectionViewSource.swift */,
 			);
 			path = GiftViewController;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				E7B5046F21BF95D200076561 /* FeaturedGiftCardCell.swift in Sources */,
 				E7B5046621BF7EC400076561 /* GiftViewController.swift in Sources */,
 				E751E92F21BCD6E800248B9E /* AppDelegate.swift in Sources */,
+				E75BE2A821C0DC8600CAEB02 /* SmallGiftCardCollectionViewSource.swift in Sources */,
 				E7B5046B21BF867000076561 /* GiftCardFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

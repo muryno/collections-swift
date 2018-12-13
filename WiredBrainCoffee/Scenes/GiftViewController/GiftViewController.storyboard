@@ -19,9 +19,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="47A-QV-a8w">
-                                <rect key="frame" x="20" y="175" width="374" height="301"/>
+                                <rect key="frame" x="20" y="175" width="374" height="729"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Featured" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Go-cx-a2H">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seasonal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Go-cx-a2H">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="24"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                         <nil key="textColor"/>
@@ -34,24 +34,24 @@
                                             <constraint firstAttribute="height" constant="269" id="BUk-zd-JDu"/>
                                         </constraints>
                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dXq-ti-pTi">
-                                            <size key="itemSize" width="375" height="241.66666666666666"/>
+                                            <size key="itemSize" width="375" height="241"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="87j-aw-mfL" customClass="FeaturedGiftCardCell" customModule="WiredBrainCoffee" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="13.666666666666666" width="375" height="241.66666666666666"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" reuseIdentifier="cell" id="87j-aw-mfL" customClass="FeaturedGiftCardCell" customModule="WiredBrainCoffee" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="14" width="360" height="241"/>
+                                                <autoresizingMask key="autoresizingMask"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="241.66666666666666"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="360" height="241"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lmK-RS-Fyt">
-                                                            <rect key="frame" x="0.0" y="0.0" width="365" height="231.66666666666666"/>
+                                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lmK-RS-Fyt">
+                                                            <rect key="frame" x="0.0" y="0.0" width="350" height="225"/>
                                                             <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AE7-F0-euU">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="365" height="231.66666666666666"/>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AE7-F0-euU">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="350" height="223"/>
                                                                 </imageView>
                                                             </subviews>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -70,9 +70,122 @@
                                                     <constraint firstAttribute="trailing" secondItem="lmK-RS-Fyt" secondAttribute="trailing" constant="10" id="iSw-9r-lma"/>
                                                     <constraint firstItem="lmK-RS-Fyt" firstAttribute="leading" secondItem="87j-aw-mfL" secondAttribute="leading" id="vcc-D5-pcg"/>
                                                 </constraints>
+                                                <size key="customSize" width="360" height="241"/>
                                                 <connections>
                                                     <outlet property="cardImageView" destination="AE7-F0-euU" id="HlC-Tb-FgT"/>
                                                     <outlet property="cardView" destination="lmK-RS-Fyt" id="PMh-dF-JFa"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank You" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HnY-IX-UIS">
+                                        <rect key="frame" x="0.0" y="309" width="374" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7e7-3B-RZE">
+                                        <rect key="frame" x="0.0" y="335" width="374" height="180"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="wGa-Fk-r07"/>
+                                        </constraints>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="5" minimumInteritemSpacing="10" id="YUm-w6-spC">
+                                            <size key="itemSize" width="365" height="149"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" reuseIdentifier="cell" id="Bho-5h-036" customClass="FeaturedGiftCardCell" customModule="WiredBrainCoffee" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="15.666666666666666" width="365" height="149"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="365" height="149"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9G1-ef-l5n">
+                                                            <rect key="frame" x="0.0" y="0.0" width="355" height="119"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="46h-Y8-0tS">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="355" height="119"/>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstItem="46h-Y8-0tS" firstAttribute="leading" secondItem="9G1-ef-l5n" secondAttribute="leading" id="c4q-k4-o1y"/>
+                                                                <constraint firstAttribute="bottom" secondItem="46h-Y8-0tS" secondAttribute="bottom" id="dGy-ZC-DGs"/>
+                                                                <constraint firstAttribute="trailing" secondItem="46h-Y8-0tS" secondAttribute="trailing" id="quD-q8-EhX"/>
+                                                                <constraint firstItem="46h-Y8-0tS" firstAttribute="top" secondItem="9G1-ef-l5n" secondAttribute="top" id="rPZ-xj-y8J"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                </view>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="9G1-ef-l5n" secondAttribute="bottom" constant="10" id="0OX-bN-kwA"/>
+                                                    <constraint firstItem="9G1-ef-l5n" firstAttribute="leading" secondItem="Bho-5h-036" secondAttribute="leading" id="1DD-u9-pp2"/>
+                                                    <constraint firstItem="9G1-ef-l5n" firstAttribute="top" secondItem="Bho-5h-036" secondAttribute="top" id="9h9-MA-1hm"/>
+                                                    <constraint firstAttribute="trailing" secondItem="9G1-ef-l5n" secondAttribute="trailing" constant="10" id="cnT-G3-Oha"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="cardImageView" destination="46h-Y8-0tS" id="N64-7I-Hwq"/>
+                                                    <outlet property="cardView" destination="9G1-ef-l5n" id="dBT-g7-2sM"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birthdays" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LmS-P1-Ipe">
+                                        <rect key="frame" x="0.0" y="523" width="374" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gPA-k4-ZTK">
+                                        <rect key="frame" x="0.0" y="549" width="374" height="180"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="ctg-zt-OZ0"/>
+                                        </constraints>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lA7-TL-dSa">
+                                            <size key="itemSize" width="340" height="129"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="mFd-h8-toS" customClass="FeaturedGiftCardCell" customModule="WiredBrainCoffee" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="25.666666666666668" width="340" height="129"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="340" height="129"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kba-9R-9SY">
+                                                            <rect key="frame" x="0.0" y="0.0" width="330" height="119"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bDi-cX-gis">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="330" height="119"/>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="bDi-cX-gis" secondAttribute="trailing" id="0gP-ki-W8t"/>
+                                                                <constraint firstAttribute="bottom" secondItem="bDi-cX-gis" secondAttribute="bottom" id="8D1-ag-UNH"/>
+                                                                <constraint firstItem="bDi-cX-gis" firstAttribute="top" secondItem="kba-9R-9SY" secondAttribute="top" id="owX-Tr-yOU"/>
+                                                                <constraint firstItem="bDi-cX-gis" firstAttribute="leading" secondItem="kba-9R-9SY" secondAttribute="leading" id="waC-8t-eGS"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                </view>
+                                                <constraints>
+                                                    <constraint firstItem="kba-9R-9SY" firstAttribute="top" secondItem="mFd-h8-toS" secondAttribute="top" id="Al7-Lv-Adx"/>
+                                                    <constraint firstAttribute="bottom" secondItem="kba-9R-9SY" secondAttribute="bottom" constant="10" id="IdN-kT-FB4"/>
+                                                    <constraint firstAttribute="trailing" secondItem="kba-9R-9SY" secondAttribute="trailing" constant="10" id="Nq3-s2-le2"/>
+                                                    <constraint firstItem="kba-9R-9SY" firstAttribute="leading" secondItem="mFd-h8-toS" secondAttribute="leading" id="QVp-Xn-H89"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="cardImageView" destination="bDi-cX-gis" id="wAS-9f-ke5"/>
+                                                    <outlet property="cardView" destination="kba-9R-9SY" id="XRv-Ym-M2z"/>
                                                 </connections>
                                             </collectionViewCell>
                                         </cells>
@@ -90,8 +203,12 @@
                     </view>
                     <navigationItem key="navigationItem" title="Gift cards" id="uTk-oK-fu6"/>
                     <connections>
-                        <outlet property="collectionViewHeightConstraint" destination="BUk-zd-JDu" id="tXW-s4-LvQ"/>
-                        <outlet property="featuredCollectionView" destination="q66-Fc-cTH" id="ZL0-dx-FOk"/>
+                        <outlet property="birthdayCollectionView" destination="gPA-k4-ZTK" id="zAG-fb-nZG"/>
+                        <outlet property="seasonalCollectionView" destination="q66-Fc-cTH" id="ZL0-dx-FOk"/>
+                        <outlet property="seasonalHeightConstraint" destination="BUk-zd-JDu" id="tXW-s4-LvQ"/>
+                        <outlet property="thankyouCollectionView" destination="7e7-3B-RZE" id="OC2-qX-xtf"/>
+                        <outletCollection property="smallerHeightConstraints" destination="wGa-Fk-r07" collectionClass="NSMutableArray" id="t0r-5f-k0j"/>
+                        <outletCollection property="smallerHeightConstraints" destination="ctg-zt-OZ0" collectionClass="NSMutableArray" id="HPz-nt-su4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ntG-uA-tFR" userLabel="First Responder" sceneMemberID="firstResponder"/>
