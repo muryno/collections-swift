@@ -10,19 +10,15 @@
 		E751E92F21BCD6E800248B9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E751E92E21BCD6E800248B9E /* AppDelegate.swift */; };
 		E751E93621BCD6E800248B9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E751E93521BCD6E800248B9E /* Assets.xcassets */; };
 		E751E93921BCD6E800248B9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E751E93721BCD6E800248B9E /* LaunchScreen.storyboard */; };
-		E75BE2A821C0DC8600CAEB02 /* SmallGiftCardCollectionViewSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75BE2A721C0DC8600CAEB02 /* SmallGiftCardCollectionViewSource.swift */; };
 		E78E378521BE36EF00DF4E57 /* MainTabViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E78E378421BE36EF00DF4E57 /* MainTabViewController.storyboard */; };
 		E78E378721BE375E00DF4E57 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E78E378621BE375E00DF4E57 /* HomeViewController.storyboard */; };
 		E78E378921BE378200DF4E57 /* CardsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E78E378821BE378200DF4E57 /* CardsViewController.storyboard */; };
 		E78E378B21BE37A100DF4E57 /* OrderViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E78E378A21BE37A100DF4E57 /* OrderViewController.storyboard */; };
 		E78E378D21BE37C600DF4E57 /* StoresViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E78E378C21BE37C600DF4E57 /* StoresViewController.storyboard */; };
 		E78E378F21BE37E800DF4E57 /* GiftViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E78E378E21BE37E800DF4E57 /* GiftViewController.storyboard */; };
-		E7B5046621BF7EC400076561 /* GiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B5046521BF7EC400076561 /* GiftViewController.swift */; };
 		E7B5046921BF7FAA00076561 /* GiftCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B5046821BF7FAA00076561 /* GiftCardModel.swift */; };
 		E7B5046B21BF867000076561 /* GiftCardFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B5046A21BF867000076561 /* GiftCardFunctions.swift */; };
 		E7B5046D21BF919C00076561 /* MockGiftCards.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7B5046C21BF919C00076561 /* MockGiftCards.xcassets */; };
-		E7B5046F21BF95D200076561 /* GiftCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B5046E21BF95D200076561 /* GiftCardCell.swift */; };
-		E7C7E52721C71AE1006E6F74 /* UICollectionViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C7E52621C71AE1006E6F74 /* UICollectionViewCellExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,19 +27,15 @@
 		E751E93521BCD6E800248B9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E751E93821BCD6E800248B9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E751E93A21BCD6E800248B9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E75BE2A721C0DC8600CAEB02 /* SmallGiftCardCollectionViewSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallGiftCardCollectionViewSource.swift; sourceTree = "<group>"; };
 		E78E378421BE36EF00DF4E57 /* MainTabViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainTabViewController.storyboard; sourceTree = "<group>"; };
 		E78E378621BE375E00DF4E57 /* HomeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = HomeViewController.storyboard; path = WiredBrainCoffee/Scenes/HomeViewController/HomeViewController.storyboard; sourceTree = SOURCE_ROOT; };
 		E78E378821BE378200DF4E57 /* CardsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CardsViewController.storyboard; path = WiredBrainCoffee/Scenes/CardsViewController/CardsViewController.storyboard; sourceTree = SOURCE_ROOT; };
 		E78E378A21BE37A100DF4E57 /* OrderViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OrderViewController.storyboard; sourceTree = "<group>"; };
 		E78E378C21BE37C600DF4E57 /* StoresViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = StoresViewController.storyboard; path = WiredBrainCoffee/Scenes/StoresViewController/StoresViewController.storyboard; sourceTree = SOURCE_ROOT; };
 		E78E378E21BE37E800DF4E57 /* GiftViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = GiftViewController.storyboard; path = WiredBrainCoffee/Scenes/GiftViewController/GiftViewController.storyboard; sourceTree = SOURCE_ROOT; };
-		E7B5046521BF7EC400076561 /* GiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftViewController.swift; sourceTree = "<group>"; };
 		E7B5046821BF7FAA00076561 /* GiftCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCardModel.swift; sourceTree = "<group>"; };
 		E7B5046A21BF867000076561 /* GiftCardFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCardFunctions.swift; sourceTree = "<group>"; };
 		E7B5046C21BF919C00076561 /* MockGiftCards.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MockGiftCards.xcassets; sourceTree = "<group>"; };
-		E7B5046E21BF95D200076561 /* GiftCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCardCell.swift; sourceTree = "<group>"; };
-		E7C7E52621C71AE1006E6F74 /* UICollectionViewCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewCellExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +121,6 @@
 		E751E94121BCD70E00248B9E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E7C7E52521C71AC6006E6F74 /* Extensions */,
 				E751E93521BCD6E800248B9E /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -152,9 +143,6 @@
 			isa = PBXGroup;
 			children = (
 				E78E378E21BE37E800DF4E57 /* GiftViewController.storyboard */,
-				E7B5046521BF7EC400076561 /* GiftViewController.swift */,
-				E7B5046E21BF95D200076561 /* GiftCardCell.swift */,
-				E75BE2A721C0DC8600CAEB02 /* SmallGiftCardCollectionViewSource.swift */,
 			);
 			path = GiftViewController;
 			sourceTree = "<group>";
@@ -175,14 +163,6 @@
 				E7B5046C21BF919C00076561 /* MockGiftCards.xcassets */,
 			);
 			path = GiftCardModel;
-			sourceTree = "<group>";
-		};
-		E7C7E52521C71AC6006E6F74 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				E7C7E52621C71AE1006E6F74 /* UICollectionViewCellExtension.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,11 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7B5046921BF7FAA00076561 /* GiftCardModel.swift in Sources */,
-				E7B5046F21BF95D200076561 /* GiftCardCell.swift in Sources */,
-				E7C7E52721C71AE1006E6F74 /* UICollectionViewCellExtension.swift in Sources */,
-				E7B5046621BF7EC400076561 /* GiftViewController.swift in Sources */,
 				E751E92F21BCD6E800248B9E /* AppDelegate.swift in Sources */,
-				E75BE2A821C0DC8600CAEB02 /* SmallGiftCardCollectionViewSource.swift in Sources */,
 				E7B5046B21BF867000076561 /* GiftCardFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
