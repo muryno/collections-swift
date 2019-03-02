@@ -19,7 +19,7 @@ class SmallGiftCardCollectionViewSource: NSObject, UICollectionViewDataSource, U
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! FeaturedGiftCardCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: GiftCardCell.identifier, for: indexPath) as! GiftCardCell
         cell.setup(model: data[indexPath.item])
         return cell
     }

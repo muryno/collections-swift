@@ -12,16 +12,13 @@ class GiftViewController: UIViewController {
 
     @IBOutlet weak var seasonalCollectionView: UICollectionView!
     @IBOutlet weak var thankyouCollectionView: UICollectionView!
-    @IBOutlet weak var birthdayCollectionView: UICollectionView!
     @IBOutlet weak var seasonalHeightConstraint: NSLayoutConstraint!
-    @IBOutlet var smallerHeightConstraints: [NSLayoutConstraint]!
-    
+    @IBOutlet weak var thankYouHeightConstraint: NSLayoutConstraint!
+
     var seasonalGiftCards = [GiftCardModel]()
     var thankYouGiftCards = [GiftCardModel]()
-    var birthdayGiftCards = [GiftCardModel]()
 
     var thankYouSource: SmallGiftCardCollectionViewSource?
-    var birthdaySource: SmallGiftCardCollectionViewSource?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,15 +43,6 @@ class GiftViewController: UIViewController {
             self.thankyouCollectionView.delegate = self.thankYouSource
             self.thankyouCollectionView.reloadData()
         }
-        
-        GiftCardFunctions.getBirthdayGiftCards { [weak self] (cards) in
-            guard let self = self else { return }
-            
-            self.birthdaySource = SmallGiftCardCollectionViewSource(data: cards)
-            self.birthdayCollectionView.dataSource = self.birthdaySource
-            self.birthdayCollectionView.delegate = self.birthdaySource
-            self.birthdayCollectionView.reloadData()
-        }
     }
     
     func setHeightOfCollectionViews() {
@@ -63,9 +51,7 @@ class GiftViewController: UIViewController {
         seasonalHeightConstraint.constant = height
         
         let smallerHeight = (height/2)
-        smallerHeightConstraints.forEach { (constraint) in
-            constraint.constant = smallerHeight
-        }
+        thankYouHeightConstraint.constant = smallerHeight
     }
 }
 
@@ -75,14 +61,13 @@ extension GiftViewController: UICollectionViewDataSource, UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! FeaturedGiftCardCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: GiftCardCell.identifier, for: indexPath) as! GiftCardCell
         cell.setup(model: seasonalGiftCards[indexPath.item])
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 
-        // Should be 240 w, 160 h
         let width: CGFloat = (collectionView.bounds.height/2) * 3
         let height: CGFloat = collectionView.bounds.height
 

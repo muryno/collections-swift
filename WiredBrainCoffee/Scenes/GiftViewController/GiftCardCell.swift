@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FeaturedGiftCardCell: UICollectionViewCell {
+class GiftCardCell: UICollectionViewCell {
     
     @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var cardImageView: UIImageView!

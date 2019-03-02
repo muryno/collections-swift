@@ -21,7 +21,8 @@
 		E7B5046921BF7FAA00076561 /* GiftCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B5046821BF7FAA00076561 /* GiftCardModel.swift */; };
 		E7B5046B21BF867000076561 /* GiftCardFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B5046A21BF867000076561 /* GiftCardFunctions.swift */; };
 		E7B5046D21BF919C00076561 /* MockGiftCards.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7B5046C21BF919C00076561 /* MockGiftCards.xcassets */; };
-		E7B5046F21BF95D200076561 /* FeaturedGiftCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B5046E21BF95D200076561 /* FeaturedGiftCardCell.swift */; };
+		E7B5046F21BF95D200076561 /* GiftCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B5046E21BF95D200076561 /* GiftCardCell.swift */; };
+		E7C7E52721C71AE1006E6F74 /* UICollectionViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C7E52621C71AE1006E6F74 /* UICollectionViewCellExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +42,8 @@
 		E7B5046821BF7FAA00076561 /* GiftCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCardModel.swift; sourceTree = "<group>"; };
 		E7B5046A21BF867000076561 /* GiftCardFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCardFunctions.swift; sourceTree = "<group>"; };
 		E7B5046C21BF919C00076561 /* MockGiftCards.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MockGiftCards.xcassets; sourceTree = "<group>"; };
-		E7B5046E21BF95D200076561 /* FeaturedGiftCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedGiftCardCell.swift; sourceTree = "<group>"; };
+		E7B5046E21BF95D200076561 /* GiftCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCardCell.swift; sourceTree = "<group>"; };
+		E7C7E52621C71AE1006E6F74 /* UICollectionViewCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewCellExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 		E751E94121BCD70E00248B9E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E7C7E52521C71AC6006E6F74 /* Extensions */,
 				E751E93521BCD6E800248B9E /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -135,10 +138,10 @@
 		E751E94221BCD71D00248B9E /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				E78E378321BE36BC00DF4E57 /* MainTabViewController */,
 				E7308E4B21BE3462000F5978 /* CardsViewController */,
 				E751E94321BCD74D00248B9E /* GiftViewController */,
 				E7308E4A21BE3458000F5978 /* HomeViewController */,
+				E78E378321BE36BC00DF4E57 /* MainTabViewController */,
 				E7308E4C21BE3475000F5978 /* OrderViewController */,
 				E7308E4D21BE3483000F5978 /* StoresViewController */,
 			);
@@ -150,7 +153,7 @@
 			children = (
 				E78E378E21BE37E800DF4E57 /* GiftViewController.storyboard */,
 				E7B5046521BF7EC400076561 /* GiftViewController.swift */,
-				E7B5046E21BF95D200076561 /* FeaturedGiftCardCell.swift */,
+				E7B5046E21BF95D200076561 /* GiftCardCell.swift */,
 				E75BE2A721C0DC8600CAEB02 /* SmallGiftCardCollectionViewSource.swift */,
 			);
 			path = GiftViewController;
@@ -172,6 +175,14 @@
 				E7B5046C21BF919C00076561 /* MockGiftCards.xcassets */,
 			);
 			path = GiftCardModel;
+			sourceTree = "<group>";
+		};
+		E7C7E52521C71AC6006E6F74 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E7C7E52621C71AE1006E6F74 /* UICollectionViewCellExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,7 +263,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7B5046921BF7FAA00076561 /* GiftCardModel.swift in Sources */,
-				E7B5046F21BF95D200076561 /* FeaturedGiftCardCell.swift in Sources */,
+				E7B5046F21BF95D200076561 /* GiftCardCell.swift in Sources */,
+				E7C7E52721C71AE1006E6F74 /* UICollectionViewCellExtension.swift in Sources */,
 				E7B5046621BF7EC400076561 /* GiftViewController.swift in Sources */,
 				E751E92F21BCD6E800248B9E /* AppDelegate.swift in Sources */,
 				E75BE2A821C0DC8600CAEB02 /* SmallGiftCardCollectionViewSource.swift in Sources */,
@@ -397,6 +409,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L2T9XB5368;
 				INFOPLIST_FILE = WiredBrainCoffee/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -415,6 +428,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L2T9XB5368;
 				INFOPLIST_FILE = WiredBrainCoffee/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
